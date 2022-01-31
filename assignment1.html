@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+
+                background-color: lightsalmon;             background-image: url("doggo.jpg");
+                background-size: 1100px;
+                background-repeat: no-repeat;
+                width: 400px;
+                height: 250px;
+                color:antiquewhite;
+            }
+            h1{
+                color: grey;
+            }
+            p{
+                color:blanchedalmond;
+            }
+        </style>
+    </head>
+<body>
+<h1>Doggo</h1>
+<p>Welcome to Doggo, a blog for adult community</p>
+<p id="demo"></p>
+
+<script>
+window.alert("Warning confirm if you are 18+");
+let person = prompt("Please enter your name", "Potato");
+let age = prompt("Please enter your age", "30");
+if (person != null && age >= 18) {
+  document.getElementById("demo").innerHTML =
+  "Hello " + person + "! How are you today?";
+} else if(Number(age) <= 18){
+    document.getElementById("demo").innerHTML =
+  "Hello " + person + " You are not permitted to enter this site";
+}
+</script>
+
+</body>
+</html>
